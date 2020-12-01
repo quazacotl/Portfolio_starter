@@ -1,0 +1,59 @@
+.work
+  padding-top: 125px
+  &__wrapper
+    padding-top: 60px
+    display: grid
+    justify-content: space-around
+    grid-template-columns: repeat(4, 1fr)
+    gap: 13px
+  &__item
+    width: 270px
+    height: 270px
+    padding: 30px 30px 25px
+    border: 1px solid black
+    &-imgdiv
+      height: 65px
+    &-header
+      margin-top: 20px
+      margin-bottom: 0
+    &-text
+      margin-top: 15px
+      font-weight: 500
+      font-size: 12px
+      line-height: 18px
+
+  &__progress
+    margin-top: 120px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 30px 45px
+    &-item
+      width: 350px
+      height: 70px
+    &-headerblock
+      display: flex
+      justify-content: space-between
+    &-title
+      position: relative
+      padding-left: 13px
+      margin-top: 10px
+      @include before_circle
+      &:before
+        top: -7px
+        left: 2px
+    &-percentage
+      margin-top: 10px
+    &-backbar
+      position: relative
+      background: #E8E4DE
+      border-radius: 4px
+      width: 100%
+      margin-top: 27px
+      height: 14px
+    &-frontbar
+      position: absolute
+      height: 14px
+      top: 0
+      left: 0
+      background: $main-color
+      border-radius: 4px

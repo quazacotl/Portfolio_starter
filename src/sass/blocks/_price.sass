@@ -1,0 +1,33 @@
+.price
+  padding-top: 120px
+  &__wrapper
+    padding-top: 60px
+    display: grid
+    grid-template-columns: repeat(2, minmax(366px, auto))
+    grid-template-rows: repeat(3, minmax(44px, auto))
+    justify-content: space-around
+    row-gap: 15px
+  &__item
+    display: grid
+    position: relative
+    grid-template: repeat(2, auto) / repeat(2, auto)
+    grid-row-gap: 5px
+    padding-left: 25px
+    @include before_circle
+    &:before
+      width: 15px
+      height: 15px
+      top: 3px
+      left: 0
+    &-header
+      font-weight: bold
+    &-price
+      justify-self: end
+      font-weight: bold
+    &-descr
+      font-weight: 500
+      font-size: 12px
+      line-height: 18px
+      grid-column: 1/3
+
+
